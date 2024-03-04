@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "659079770941",
+    "project_id": "trackdeleteapp",
+    "storage_bucket": "trackdeleteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659079770941:android:291c001fb080db84ce8b54",
+        "android_client_info": {
+          "package_name": "com.celikel.uninstalltracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPzNpPKbfOiRtTaZK_2kXoiLkrv-vlSzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
