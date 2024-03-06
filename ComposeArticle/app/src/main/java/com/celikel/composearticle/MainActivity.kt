@@ -3,9 +3,11 @@ package com.celikel.composearticle
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -13,6 +15,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -42,30 +46,34 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(title: String, paragraph1: String, paragraph2: String,  modifier: Modifier = Modifier) {
+    val image = painterResource(R.drawable.bg_compose_background)
     Column (
-        verticalArrangement = Arrangement.Center,
-        modifier = modifier
+        modifier = Modifier
+            .fillMaxSize()
     ){
+        Image(
+            painter = image,
+            contentDescription = null,
+            contentScale = ContentScale.FillWidth,
+        )
         Text(
             text = title,
             fontSize = 24.sp,
             modifier = Modifier
                 .padding(16.dp)
-                .align(alignment = Alignment.CenterHorizontally)
+                .align(alignment = Alignment.Start)
         )
         Text(
             text = paragraph1,
             fontSize = 16.sp,
             modifier = Modifier
                 .padding(16.dp)
-                .align(alignment = Alignment.CenterHorizontally)
         )
         Text(
             text = paragraph2,
             fontSize = 16.sp,
             modifier = Modifier
                 .padding(16.dp)
-                .align(alignment = Alignment.CenterHorizontally)
         )
     }
 
