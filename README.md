@@ -6,4 +6,4 @@
 
 Projects / Topics                                              | Screenshots
 ---                                                            |---
-[Project 1](BirthdayCardApp)                                   |![screen1](ScreenShots/sScreenShot.png) |
+[Project 1](BirthdayCardApp)                                   |![screen1](ScreenShots/ScreenShot.png) |
